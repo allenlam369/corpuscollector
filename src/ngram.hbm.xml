@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="main.java.model.Ngram" table="corpus.ngram2">
+		<id name="id" type="long" column="id">
+		</id>
+		<property name="ngram" type="string">
+			<column name="ngram" />
+		</property>
+		<property name="count" type="int">
+			<column name="count" />
+		</property>
+	</class>
+</hibernate-mapping>
